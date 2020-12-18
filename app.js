@@ -1,0 +1,1 @@
+console.log("script iis working from different file")
