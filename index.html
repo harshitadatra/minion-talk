@@ -8,19 +8,28 @@
     <title>minion speak</title>
     <style>
         textarea {
-            width: 80%;
-            height: 10vh;
             display: block;
-            margin: 1rem;
-            padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    width:300px;
+    padding: 1rem;
+    box-shadow:0 0 5px black;
+            
+            
         }
 
         #output {
-            border: 1px solid black;
-            height: 10vh;
-            width: 80%;
-            margin: 1rem;
-            padding: 1rem;
+            display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    width:300px;
+    height: 150px;
+    padding: 1rem;
+    box-shadow:0 0 5px black;
+            
+           
         }
     </style>
 
@@ -28,56 +37,72 @@
 </head>
 
 <body>
-    
+
 
     </section>
     <nav class="navigation ">
         <div class="nav-brand">
-            BANANA TALK
+            <b> BANANA TALK</b>
         </div>
         <ul class="list-non-bullet nav-pills">
             <li class="list-item-inline">
-                <a class="link" href="index.html">home</a>
+                <a class="link" href="#talk" >talk with minions</a>
             </li>
             <li class="list-item-inline">
-                <a class="link" href="project.html">projects</a>
+                <a class="link" href="#love">Love minions?</a>
             </li>
-            <li class="list-item-inline">
-                <a class="link" href="blog.html">blogs</a>
-            </li>
+
         </ul>
     </nav>
-    <section class="one two">
+    <section class="one">
         <img class="image" src="https://www.color-name.com/wp-content/uploads/minion-yellow.png" alt="">
         <h2><strong>“C’est banana! Hahaha! Miam Miam! Huh?” 🖤 </strong></h2>
-    <textarea id="txt-input" placeholder="enter text to translate......">
-    </textarea>
-    <section class="three">
-        <h2  style="color: #0A75BC; font-size: 1.5rem;"   ><strong>Minion Translator is Ready.</strong></h2>
-        <img src="http://www.funkidslive.com/wp-content/uploads/2014/11/minions-film-1-1024x275.jpg" alt="">
-
-         
-        
     </section>
 
 
 
-    <button id="btn-translate"> translate</button>
-
-    <div style="font-size: larger;"> Output will come here 👇</div>
-    <div id="output"></div>
-    <script src="app.js" type="text/javascript"></script>
-    <footer class="footer">
-
-        <p>Who doesn't love minions?<br>
-            These adorable yellow blobs have a language of their own!
-            Try out this translator to understand their language!<br> designed and developed by Harshit Adatra<br>
-        &copy 2020 harshit_adatra</p>
+    <section class="three">
+        <h2 style="color: #0A75BC; font-size: 1.5rem;"><strong>Minion Translator is Ready.</strong></h2>
+        <img style="height: 100px;"
+            src="http://www.funkidslive.com/wp-content/uploads/2014/11/minions-film-1-1024x275.jpg" alt="">
+    </section>
+    <section id="talk">
+        <textarea id="txt-input" name="text" cols="30" rows="7" placeholder="Talk to minion😄"></textarea>
         
-        
-           
-    </footer>
+        <div id="output-text" style="font-size: larger;"> Output will come here 👇</div>
+        <div id="output"></div>
 
+    </section>
+
+    <section class="button ">
+
+        <button id="btn-translate"> translate</button>
+        <section>
+            <section class="five">
+
+                <img src="http://www.funkidslive.com/wp-content/uploads/2014/11/MINION.jpg" alt="">
+                <!-- <p style="display: inline;"> <strong>Minion is Working</strong></p> -->
+                <img id="o"
+                    src="https://e7.pngegg.com/pngimages/54/582/png-clipart-red-arrow-illustration-arrow-icon-arrow-right-angle-text.png"
+                    alt="">
+                <img src="http://www.funkidslive.com/wp-content/uploads/2014/11/english1.jpg" alt="">
+
+
+            </section>
+            <section class="one welcome" id="love">
+                <h2>Aww , You Love Minions!</h2>
+                <p>Here is a small glimpse of us❤️</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=TsqbxwQLeEE" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </section>
+
+            <script src="app.js" type="text/javascript"></script>
+
+            <footer class="footer">
+                <p> designed and developed by Harshit Adatra<br>
+                    &copy 2020 harshit_adatra</p>
+            </footer>
 </body>
 
 </html>
